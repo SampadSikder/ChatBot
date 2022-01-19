@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main_Code.getMessage">
+   <children>
+      <TextField fx:id="Message" layoutX="6.0" layoutY="376.0" prefHeight="19.0" prefWidth="492.0" stylesheets="@../Stylesheet/stylesheet.css" />
+      <Button fx:id="Send" alignment="CENTER" layoutX="503.0" layoutY="373.0" mnemonicParsing="false" onAction="#Send" prefHeight="35.0" prefWidth="98.0" stylesheets="@../Stylesheet/stylesheet.css" text="Send">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="Background" fitHeight="349.0" fitWidth="605.0" layoutX="-1.0" layoutY="23.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/GRAD_3.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="TextArea2" editable="false" layoutY="22.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.71" prefHeight="349.0" prefWidth="605.0" stylesheets="@../Stylesheet/stylesheet.css">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </TextArea>
+      <MenuBar fx:id="File" prefHeight="22.0" prefWidth="604.0" stylesheets="@../Stylesheet/stylesheet.css">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="Save" mnemonicParsing="false" onAction="#SaveFile" text="Save" />
+                  <MenuItem fx:id="Load" mnemonicParsing="false" onAction="#load" text="Load Previous" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+              <items>
+                  <Menu mnemonicParsing="false" text="Font">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#Arial" text="Arial" />
+                        <MenuItem mnemonicParsing="false" onAction="#Times_New_Roman" text="Times New Roman" />
+                        <MenuItem mnemonicParsing="false" onAction="#Cambria" text="Cambria" />
+                        <MenuItem mnemonicParsing="false" onAction="#Comic_Sans" text="Comic Sans MS" />
+                        <MenuItem mnemonicParsing="false" onAction="#Georgia" text="Georgia(Default)" />
+                    </items>
+                  </Menu>
+                <MenuItem mnemonicParsing="false" onAction="#Edit" text="Edit Text" />
+                  <MenuItem mnemonicParsing="false" onAction="#Lock" text="Lock Text" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Change Background">
+               <items>
+                  <MenuItem fx:id="Grad_1" mnemonicParsing="false" onAction="#Grad_1" text="Gradient 1" />
+                  <MenuItem fx:id="Grad_2" mnemonicParsing="false" onAction="#Grad_2" text="Gradient 2" />
+                  <MenuItem fx:id="Grad_3" mnemonicParsing="false" onAction="#Grad_3" text="Gradient 3" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

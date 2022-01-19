@@ -1,0 +1,8 @@
+User: Hello
+Bot: Hello my friend.
+User: What is the time now?
+Bot: The time is: 16:44:54
+User: What is the date?
+Bot: The date is: 2021-06-10
+User: Bye
+Bot: See you!
